@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    }
+
+/*main{
+    background-color: red;
+}*/
+:root{
+	--detalles: purple;
+	--fondos: seashell;
+	--azul: #3860EC;
+}
+
+body, .ancla{
+    padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+
+}
+
+.nav{
+        display: inline-flex; /*me lo pone horizontal*/
+        list-style-type: none; /*saca los puntitos*/
+        float: right; /*a la derecha*/
+        margin: 20px; 
+       
+}
+
+nav a{
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 30px;
+    color: #fff;
+    }
+
+.nav a:hover{
+    /*background-color: violet;*/
+    border-bottom: 4px solid violet;       
+}
+
+.nav li:nth-child(4){
+    background-color: red;
+    border-radius: 40%;
+}
+
+h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 80px;
+}
+
+#main-header{
+    background: var(--detalles);
+	height: 70px;
+	width: 100%; /* hago que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posiciono la cabecera al lado izquierdo */
+	top: 0; /* Posiciono la cabecera pegada arriba */
+	position: fixed; /* Hago que la cabecera tenga una posición fija */
+}
+
+header{
+    box-shadow: 0px 8px 10px 4px purple
+/*posicion horizontal, posicion vertical, efecto, tamaño*/
+}
+/****##Seccion presentacion##****/
+/*************************************************************************/
+.hola{
+    background-color: var(--fondos);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.hola-presentcion{
+    /*margin-top: 15%;*/
+    text-align: center;
+    width: 50%;
+    /*background-color: red;*/
+}
+.hola-presentcion p:nth-child(1){
+    font-size: 30px;
+}
+.hola-presentcion h1{
+    color: var(--detalles);
+    margin: 3% auto;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.hola-presentcion p:last-of-type{
+    font-size: 30px;
+    font-style: italic;
+}
+    .hola-boton{
+        color: #fff;
+        border: none;
+        background-color: var(--detalles);
+        border-radius: 40px;
+        margin: 40px;
+        padding: 10px 30px;
+        font-size: 20px;
+}
+.hola-boton:hover{
+/*border: 0.1px solid var(--detalles);*/
+background-color: violet;
+color: var(--detalles);
+}
+
+.hola-boton:active{
+    background-color: var(--detalles);
+    color: #fff;
+}
+
+            .principal{
+                width: 40%;
+                height: auto;
+                margin: 40px;
+                /*background-color: royalblue;*/
+
+}
+
+/****##Seccion hablididades##****/
+/*************************************************************************/
+.habilidades{
+    width: 100%;
+    height: 100vh;
+    background-color: #F6F7FB;
+    text-align: center;
+}
+
+.habilidades-texto{
+    font-size: 30px;
+    margin: 5%;
+}
+
+    figure{
+    width: 100px;
+    height: 90px;
+    border: 2px solid var(--detalles);
+    border-radius: 5%;
+    margin: 2px auto;
+    padding: 30px;
+    background-color: var(--fondos);
+}
+
+figure:hover{
+    border: 2px solid violet;
+    
+}
+
+.css, .html, .js, .sass, .react, .git{
+float: left;
+margin: 2.9%;
+}
+
+
+/****##Seccion cita##****/
+/*************************************************************************/
+
+.cita{
+    /*background-color: purple ;*/
+    font-size: 60px;
+    text-align: center;
+    background-image: url(../img/fondocita.jfif);
+    background-size: cover ;
+    padding: 100px;
+}
+
+blockquote::before{
+    content: "\201C";
+   /* estilo de la cita */ 
+    color : var(--detalles);
+    font-size: 250px;
+    
+}
+
+/****##Seccion proyectos##****/
+/*************************************************************************/
+.proyectos{
+    width: 100%;
+    height: 100vh;
+    /*background-color: gold;*/
+}
+
+.provisorio{
+    text-align: center;
+    font-size: 35px;
+    color: var(--detalles);
+    margin: 150px;
+    font-style: oblique;
+}
+/****##Seccion contactos##****/
+/*************************************************************************/
+/*.ancla-contacto{
+    padding-top: 170px;
+}no esta haciendo nada*/
+
+.contacto{
+    /*height: 50vh;*/
+    border: 1px solid black;
+    margin: 10%;
+    padding: 5%;
+    border-radius: 33px;
+    background-color: var(--fondos);
+    display: flex;
+    
+    
+}
+.contacto-datos{
+    width: 40%;
+    margin-right: 10%;
+    
+}
+
+.contacto-datos p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contacto-datos a{
+    text-decoration: none;
+    line-height: 30px; /*interlineado*/
+  
+}
+div{
+    /*background-color: red;*/
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*********************************##footer##****/
+/********************************************************************/
+footer{
+    background-color: var(--detalles);
+    text-align: center;
+    padding: 30px;
+}
+.footer-links {
+    display: inline-flex; /*me lo pone horizontal*/
+    list-style-type: none; /*saca los puntitos*/
+}
+.footer-links a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.footer-links a:hover{
+background-color: #fff;
+color: var(--detalles);
+border-radius: 10px;
+} 
+
+    .footer-redes{
+        /*display: inline-flex; me lo pone horizontal*/
+        /*list-style-type: none; /*saca los puntitos*/
+        margin: 30px;
+    }
+
+    .footer-redes a{
+        text-decoration: none;
+        margin: 10px;
+        font-size: 30px;
+        color: #fff;
+        }
+
+    .footer-redes a:hover{
+        color: violet;
+    }

@@ -1,0 +1,31 @@
+header (menu)
+	nav
+		hola
+		conocimientos
+		proyectos
+		contacto
+
+section (presentacion)
+	h1
+	h3
+	figure
+
+seccion (habilidades)
+	article 
+	article
+	article
+	article
+	article
+	article
+
+cita
+
+seccion (proyectos)
+
+seccion (contacto)
+
+footer
+
+
+
+	
