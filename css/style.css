@@ -13,44 +13,52 @@
 }
 
 body, .ancla{
-    padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
-
+    /*padding-top: 70px; /* Relleno superior igual a la altura de la cabecera*/
+    width: 100vw;
 }
 
 .nav{
-        display: inline-flex; /*me lo pone horizontal*/
+        display: flex; /*me lo pone horizontal*/
         list-style-type: none; /*saca los puntitos*/
-        float: right; /*a la derecha*/
-        margin: 20px; 
-       
+        /*float: right; /*a la derecha*/
+        /*margin: 20px; */
+        justify-content: flex-end; /*sustituye el float right*/
+        /*background-color: blue;*/
 }
 
-nav a{
+.nav a{
     text-decoration: none;
-    margin-left: 30px;
-    font-size: 30px;
-    color: #fff;
+    /*font-size: 30px;*/
+    font-size: calc(1em + 1vw);
+    color: var(--detalles);
+    
+    /*background-color: lawngreen;*/
     }
+.nav li{
+    margin: 10px;
+}
 
 .nav a:hover{
     /*background-color: violet;*/
-    border-bottom: 4px solid violet;       
+    border-bottom: 4px solid violet;      
 }
 
 .nav li:nth-child(4){
-    background-color: red;
-    border-radius: 40%;
+    background-color: violet;
+    border-radius: 1.8rem;
+    text-align: center;
 }
 
 h2{
-    font-size: 50px;
-    margin-bottom: 30px;
+    /*font-size: 50px;*/
+    font-size: calc(2em + 1vw);
+    /*margin-bottom: 30px;*/
     text-align: center;
-    padding: 80px;
+    padding-top: 80px; /*NO SACAR -> permite usar anclas*/
 }
 
 #main-header{
-    background: var(--detalles);
+    background: #fff;
 	height: 70px;
 	width: 100%; /* hago que la cabecera ocupe el ancho completo de la página */
 	left: 0; /* Posiciono la cabecera al lado izquierdo */
@@ -59,7 +67,7 @@ h2{
 }
 
 header{
-    box-shadow: 0px 8px 10px 4px purple
+    box-shadow: 0px 8px 10px 4px var(--detalles);
 /*posicion horizontal, posicion vertical, efecto, tamaño*/
 }
 /****##Seccion presentacion##****/
@@ -67,31 +75,31 @@ header{
 .hola{
     background-color: var(--fondos);
     height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
-
 }
-
-
-
 .hola-presentcion{
     /*margin-top: 15%;*/
     text-align: center;
     width: 50%;
     /*background-color: red;*/
 }
-.hola-presentcion p:nth-child(1){
-    font-size: 30px;
+.hola-presentcion p:first-child{
+    /*font-size: 30px;*/
+    font-size: calc(1em + 1vw);
 }
 .hola-presentcion h1{
     color: var(--detalles);
     margin: 3% auto;
     font-weight: bold;
-    font-size: 60px;
+    /*font-size: 60px;*/
+    font-size: calc(3em + 1vw);
 }
 
 .hola-presentcion p:last-of-type{
-    font-size: 30px;
+    /*font-size: 30px;*/
+    font-size: calc(1em + 1vw);
     font-style: italic;
 }
     .hola-boton{
@@ -101,7 +109,8 @@ header{
         border-radius: 40px;
         margin: 40px;
         padding: 10px 30px;
-        font-size: 20px;
+        /*font-size: 20px;*/
+        font-size: calc(.5em + 1vw);
 }
 .hola-boton:hover{
 /*border: 0.1px solid var(--detalles);*/
@@ -126,7 +135,7 @@ color: var(--detalles);
 /*************************************************************************/
 .habilidades{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: #F6F7FB;
     text-align: center;
 }
@@ -148,7 +157,7 @@ color: var(--detalles);
 
 figure:hover{
     border: 2px solid violet;
-    
+    filter: blur(5px);    
 }
 
 .css, .html, .js, .sass, .react, .git{
@@ -200,9 +209,9 @@ blockquote::before{
 
 .contacto{
     /*height: 50vh;*/
-    border: 1px solid black;
+    border: 1px solid var(--detalles);
     margin: 10%;
-    padding: 5%;
+    /*padding: 5%;*/
     border-radius: 33px;
     background-color: var(--fondos);
     display: flex;
@@ -224,8 +233,8 @@ blockquote::before{
     line-height: 30px; /*interlineado*/
   
 }
-div{
-    /*background-color: red;*/
+div{ /*no esta funcionado*/
+    background-color: red;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -238,10 +247,12 @@ footer{
     background-color: var(--detalles);
     text-align: center;
     padding: 30px;
+    /*width: 100%;*/
 }
 .footer-links {
     display: inline-flex; /*me lo pone horizontal*/
     list-style-type: none; /*saca los puntitos*/
+    
 }
 .footer-links a{
     text-decoration: none;
@@ -271,3 +282,34 @@ border-radius: 10px;
     .footer-redes a:hover{
         color: violet;
     }
+
+
+
+    @media(max-width: 650px){
+        #main-header{
+            display: none;
+        }
+        .principal{
+            /*display:none;*/
+        }
+
+        .hola{
+            display: flex;
+            flex-direction: column;
+        }
+        .hola-presentcion{
+            width: 100%;
+        }
+        /*.contacto-datos{
+            display: none;
+        }*/
+        .contacto{
+            display: flex;
+            flex-direction: column;
+            border: none;
+        }
+    }
+    
+        
+
+    

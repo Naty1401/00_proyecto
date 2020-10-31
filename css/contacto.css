@@ -1,0 +1,25 @@
+.
+
+
+label{
+background-color: red;
+}
+
+input{
+    background-color: yellow;
+    border-radius: 15px;
+}
+
+textarea{
+    background-color: blue;
+}
+
+.form{
+    background-color: green;
+    list-style: none;
+    line-height: 50px;
+}
+
+.contacto-form{
+    background-color: orange;
+}
