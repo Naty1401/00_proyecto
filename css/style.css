@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     }
 
 /*main{
@@ -15,9 +16,11 @@
 body, .ancla{
     /*padding-top: 70px; /* Relleno superior igual a la altura de la cabecera*/
     width: 100%;
-    overflow-x: hidden; /*elimino la barra de desplazamiento horizontal*/
+    /*overflow-x: hidden; /*elimino la barra de desplazamiento horizontal*/
 }
-
+body{
+    border: 3px solid red;
+}
 h2{
     /*font-size: 50px;*/
     font-size: calc(2em + 1vw);
@@ -95,6 +98,7 @@ header{
 .hola-presentcion p:first-child{
     /*font-size: 30px;*/
     font-size: calc(1em + 1vw);
+    color: #434175;
 }
 .hola-presentcion h1{
     color: var(--detalles);
@@ -112,7 +116,7 @@ header{
 }
     .hola-boton{
         color: #fff;
-        border: none;
+        border: 1px solid var(--fondos);
         background-color: var(--detalles);
         border-radius: 40px;
         margin: 2.5em;
@@ -145,14 +149,17 @@ border: 1px solid var(--detalles);
 .habilidades{
     width: 100%;
     height: 120vh;
-    background-color: #F6F7FB;
+    /*background-color: #F6F7FB;*/
+    background-color: #434175;
     text-align: center;
 }
 .habilidades-grilla{
     display: flex;
-    /*background-color: royalblue;*/
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    background-color: royalblue;
     padding: 2%;
-    max-width: 100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
 
@@ -161,7 +168,7 @@ border: 1px solid var(--detalles);
     width: 40.5%;
     display: flex;
     flex-direction: row;
-    /*background-color: red;*/
+    background-color: red;
     
 }
 .class-grupo2{
@@ -169,7 +176,7 @@ border: 1px solid var(--detalles);
     float: left;
     display: flex;
     flex-direction: row;
-    /*background-color: rebeccapurple;*/
+    background-color: rebeccapurple;
 }
 
 .habilidades-texto{
@@ -178,23 +185,26 @@ border: 1px solid var(--detalles);
 }
 
     figure{
-    width: 100px;
-    height: 90px;
+    width: 110%;
+    height: auto;
     border: 2px solid var(--detalles);
     border-radius: 5%;
     margin: 2px auto;
     padding: 30px;
     background-color: var(--fondos);
 }
-
+figure img{
+    width: 100%;
+}
 figure:hover{
-    /*border: 2px solid violet;*/
-    filter: blur(5px);    
+    border: 2px solid violet;
+    /*filter: blur(5px);*/    
 }
 
 .css, .html, .js, .sass, .react, .git{
 /*float: left;*/
 margin: 1%;
+width: 10%;
 /*position: relative;
 left: 10%;*/
 }
@@ -281,8 +291,22 @@ blockquote::before{
 .contacto-datos a{
     text-decoration: none;
     line-height: 30px; /*interlineado*/
-  
+    color: var(--detalles);
+    margin: 30%;
+    font-size: calc(0.5em + 1vw);
+    line-height: 205%;
 }
+
+.contacto-datos a i{
+    background-color: red;
+    border: 3px solid blue;
+    padding: 2%;
+}
+
+.contacto-datos a:hover{
+    color: red;
+}
+
 /*div{ /*no esta funcionado
     background-color: red;
     height: 100vh;
