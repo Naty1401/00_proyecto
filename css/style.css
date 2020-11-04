@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
     }
 
 /*main{
@@ -16,11 +16,9 @@
 body, .ancla{
     /*padding-top: 70px; /* Relleno superior igual a la altura de la cabecera*/
     width: 100%;
-    /*overflow-x: hidden; /*elimino la barra de desplazamiento horizontal*/
+    overflow-x: hidden; /*elimino la barra de desplazamiento horizontal*/
 }
-body{
-    border: 3px solid red;
-}
+
 h2{
     /*font-size: 50px;*/
     font-size: calc(2em + 1vw);
@@ -49,7 +47,6 @@ h2{
     color: var(--detalles);
     /*background-color: lawngreen;*/
     }
-
 .nav li{
     margin: 10px;
 }
@@ -98,7 +95,6 @@ header{
 .hola-presentcion p:first-child{
     /*font-size: 30px;*/
     font-size: calc(1em + 1vw);
-    color: #434175;
 }
 .hola-presentcion h1{
     color: var(--detalles);
@@ -114,11 +110,9 @@ header{
     font-size: calc(1em + 1vw);
     font-style: italic;
 }
-
-
 .hola-boton{
     color: #fff;
-    border: 1px solid var(--fondos);
+    border: none;
     background-color: var(--detalles);
     border-radius: 40px;
     margin: 2.5em;
@@ -126,7 +120,6 @@ header{
     /*font-size: 20px;*/
     font-size: calc(.5em + 1vw);
 }
-
 .hola-boton:hover{
     /*border: 0.1px solid var(--detalles);*/
     background-color: var(--fondos);
@@ -149,70 +142,62 @@ header{
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<*********************>////////////>>>>>>>>>>>>>*/
 /*******************###### <SECCION CONOCIMIENTOS> ######*******************/
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<*********************>////////////>>>>>>>>>>>>>*/
-
 .habilidades{
     width: 100%;
     height: 120vh;
-    /*background-color: #F6F7FB;*/
-    background-color: #434175;
+    background-color: #F6F7FB;
     text-align: center;
+    align-items: center;
 }
-
 .habilidades-grilla{
     display: flex;
-    background-color: royalblue;
-    width: 100%;
+    /*background-color: royalblue;*/
+    padding: 2%;
+    /*max-width: 100%;*/
+    width: 1060px;
     justify-content: center;
     align-items: center;
-
 }
-/* .class-grupo1{
-    width: 40.5%;
+.class-grupo1{
+    width: 530px;
     display: flex;
     flex-direction: row;
-    background-color: red;
-    
+    /*background-color: red;*/
 }
 .class-grupo2{
-    width: 40.5%;
-    float: left;
+    width: 530px;
+    /*float: left;*/
     display: flex;
     flex-direction: row;
-    background-color: rebeccapurple;
-} */
+    /*background-color: rebeccapurple;*/
+}
 
 .habilidades-texto{
     font-size: 30px;
     margin: 5%;
 }
 
-figure{
-    /* width: 100%; */
-    flex: 1 0 auto;
-    /* height: auto; */
+    figure{
+    width: 100px;
+    height: 90px;
     border: 2px solid var(--detalles);
     border-radius: 5%;
-    margin: 25px;
+    margin: 2px auto;
     padding: 30px;
     background-color: var(--fondos);
 }
 
-figure img {
-    width: 100%;
-}
-
 figure:hover{
-    border: 2px solid violet;
-    /*filter: blur(5px);*/    
+    border: 2px solid var(--fondos);
+    /*filter: blur(5px); no le gusta a Jonh*/    
 }
 
-/* .css, .html, .js, .sass, .react, .git{ */
-/*float: left;*/
-/* margin: 1%; */
-/* width: 10%; */
-/*position: relative;
-left: 10%;*/
-/* } */
+.css, .html, .js, .sass, .react, .git{
+    /*float: left;*/
+    margin: 1%;
+    /*position: relative;
+    left: 10%;*/
+}
 
 
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<********************>////////////>>>>>>>>>>>>>*/
@@ -237,7 +222,6 @@ blockquote::before{
     color : var(--detalles);
     font-size: 250px;
     font-family: auto;
-    
 }
 
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<********************>////////////>>>>>>>>>>>>>*/
@@ -248,7 +232,6 @@ blockquote::before{
     height: 100vh;
     /*background-color: gold;*/
     padding-left: 5%;
-
 }
 
 .proyectos-imagen{
@@ -280,39 +263,20 @@ blockquote::before{
     border-radius: 33px;
     background-color: var(--fondos);
     display: flex;
-    
-    
 }
 .contacto-datos{
     width: 40%;
     margin-right: 10%;
-    
 }
 
 .contacto-datos p{
     text-align: center;
     margin-bottom: 20px;
 }
-
 .contacto-datos a{
     text-decoration: none;
     line-height: 30px; /*interlineado*/
-    color: var(--detalles);
-    margin: 30%;
-    font-size: calc(0.5em + 1vw);
-    line-height: 205%;
 }
-
-.contacto-datos a i{
-    background-color: red;
-    border: 3px solid blue;
-    padding: 2%;
-}
-
-.contacto-datos a:hover{
-    color: red;
-}
-
 /*div{ /*no esta funcionado
     background-color: red;
     height: 100vh;
@@ -330,19 +294,17 @@ footer{
     padding: 30px;
     width: 100vw;
 }
-
 .footer-links {
     display: inline-flex; /*me lo pone horizontal*/
     list-style-type: none; /*saca los puntitos*/
+    
 }
-
 .footer-links a{
     text-decoration: none;
     margin-left: 20px;
     font-size: 20px;
     color: #fff;
 }
-
 .footer-links a:hover{
     /*background-color: #fff;
     color: var(--detalles);*/
@@ -361,7 +323,7 @@ footer{
     margin: 10px;
     font-size: 30px;
     color: #fff;
-    }
+}
 
 .footer-redes a:hover{
     color: var(--fondos);
@@ -370,59 +332,60 @@ footer{
 
 
 
-@media(max-width: 950px){
+ @media(min-width: 978px) and (max-width:1199px){
     #main-header{
         display: none;
-    }
-    
-    .hola{
-        display: flex;
-        flex-direction: column;
-    }
-    .hola-presentcion{
-        width: 100%;
-    }
-    .contacto{
-        margin: 5% 0px;
-    }
-    .habilidades-grilla{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    /*.class-grupo1{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .class-grupo2{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }*/
 }
+        
+        .hola{
+            display: flex;
+            flex-direction: column;
+        }
+        .hola-presentcion{
+            width: 100%;
+        }
+.contacto{
+    margin: 5% 0px;
+}
+        .habilidades-grilla{
+            display: flex;
+            flex-direction: column;
+        }
+        /*.class-grupo1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .class-grupo2{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }*/
+    }
     
-@media(max-width: 550px){
+@media(max-width: 977px){
     .habilidades-grilla{
         display: flex;
-        /* flex-direction: column; */
-        /* height: 200vh; */
-        /* width: auto; */
+        flex-direction: row;
+        width: auto;
+        
+
     }
-    /* .class-grupo1{
+    .class-grupo1{
         display: flex;
         flex-direction: column;
-    }
-    .class-grupo2{
-        display: flex;
-        flex-direction: column;
-    } */
-    .contacto{
-        display: flex;
-        flex-direction: column;
-        border: none;
-    }
+}
+.class-grupo2{
+    display: flex;
+    flex-direction: column;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
 }
