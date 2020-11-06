@@ -49,7 +49,7 @@ h2{
     /*background-color: lawngreen;*/
     }
 .nav li{
-    margin: 10px;
+    margin-right: 10px;
 }
 
 .nav a:hover{
@@ -76,6 +76,9 @@ header{
     box-shadow: 0px 8px 10px 4px var(--detalles);
 /*posicion horizontal, posicion vertical, efecto, tamaño*/
 }
+
+
+
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<********************>////////////>>>>>>>>>>>>>*/
 /*******************###### <SECCION PRESENTACION> ######*******************/
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<********************>////////////>>>>>>>>>>>>>*/
@@ -137,7 +140,7 @@ header{
     width: 40%;
     min-width: 20%;
     height: auto;
-    margin: 2.5em;
+    /* margin: 2.5em; */
 }
 
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<*********************>////////////>>>>>>>>>>>>>*/
@@ -151,6 +154,10 @@ header{
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+
+.habilidades-texto{
+    font-size: calc(0.5em + 1vw);
 }
 .habilidades-grilla{
     display: flex;
@@ -238,7 +245,7 @@ blockquote::before{
 }
 
 .proyectos-imagen{
-    float: left;
+    float: left; 
     border: 1px solid var(--detalles);
     margin: 2%;
     padding: 1%;
@@ -262,7 +269,7 @@ blockquote::before{
     width: 70%;
     /*height: 50vh;*/
     border: 1px solid var(--detalles);
-    margin: 10%;
+    margin: 7% auto;
     /*padding: 5%;*/
     border-radius: 33px;
     background-color: var(--fondos);
@@ -351,6 +358,7 @@ footer{
         .habilidades-grilla{
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
         /*.class-grupo1{
             display: flex;
@@ -400,5 +408,6 @@ footer{
     flex-direction: column;
     border: none;
 }
+
 
 }
