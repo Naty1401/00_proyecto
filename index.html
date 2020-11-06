@@ -62,7 +62,7 @@
         <div class="habilidades-grilla">    
             <div class="class-grupo1">
                 <article class="css">
-                <figure>
+                <figure class="grilla-fig">
                     <img src="./img/iconos_habilidades/css3/css3-original.svg" alt="">
                         <figcaption>CSS3</figcaption>
                 </figure>
@@ -70,14 +70,14 @@
                 </article>
 
                 <article class="html">
-                    <figure>
+                    <figure class="grilla-fig">
                         <img src="./img/iconos_habilidades/html5/html5-original.svg" alt="">
                         <figcaption>HTML5</figcaption>
                     </figure>
                 </article>
 
                 <article class="js">
-                    <figure>
+                    <figure class="grilla-fig">
                         <img src="./img/iconos_habilidades/javascript/javascript-original.svg" alt="">
                         <figcaption>Java Script</figcaption>
                     </figure>
@@ -86,21 +86,21 @@
             </div>
             <div class="class-grupo2">
                 <article class="sass">
-                    <figure>
+                    <figure class="grilla-fig">
                         <img src="./img/iconos_habilidades/sass/sass-original.svg" alt="">
                         <figcaption>Sass</figcaption>
                     </figure>
                 </article>
 
                 <article class="react">
-                    <figure>
+                    <figure class="grilla-fig">
                         <img src="./img/iconos_habilidades/react/react-original.svg" alt="">
                         <figcaption>React</figcaption>
                     </figure>                    
                 </article>
 
                 <article class="git">
-                    <figure>
+                    <figure class="grilla-fig">
                         <img src="./img/iconos_habilidades/git/git-original.svg" alt="">
                         <figcaption>Git</figcaption>
                     </figure>                    
@@ -185,24 +185,43 @@
                 <h2>Escribime</h2>
 
                 <form action="#">
-                    <ul class="form">
-                        <li>
-                            <label for="name">Nombre:</label>
-                            <input type="text" id="name" name="user_name" required placeholder="xej Natalia"> 
-                        </li>
-                        <li>
-                            <label for="mail">Correo electrónico:</label>
-                            <input type="email" id="mail" name="user_mail" required> 
-                        </li>
-                        <li>
-                            <label for="msg">Mensaje:</label>
-                            <textarea name="user_message" id="msg" cols="30" rows="10">Escribir aquí su mensaje</textarea>
-                        </li>
-                        <li class="button">
+                    <!--<ul class="form"> -->
+                        <!-- <li> -->
+                            <label for="user_name">Nombre*</label>
+                            <input 
+                                type="text"
+                                name="user_name" 
+                                id="user_name"  
+                                placeholder="Natalia"
+                                required>
+                        <!-- </li> -->
+                        <!-- <li> -->
+                            <label for="user_lastname">Apellido*</label>
+                            <input 
+                                type="text" 
+                                id="user_lastname" 
+                                name="user_lastname" required 
+                                placeholder="Sacías"> 
+                        <!-- </li> -->
+                        <!-- <li> -->
+                            <label for="user_email">Correo electrónico*</label>
+                            <input 
+                                type="email" 
+                                id="user_email" 
+                                name="user_email" 
+                                placeholder="nsacias@hotmail.com"
+                                required> 
+                        <!-- </li>
+                        <li> -->
+                            <label for="user_message">Mensaje*</label>
+                            <textarea name="user_message" id="user_message" cols="30" rows="10">Escribir aquí su mensaje</textarea>
+                        <!-- </li> -->
+                        <!-- <li class="button"> -->
                             <button type="submit">Enviar</button>     
-                        </li>
-                    </ul>
+                        <!-- </li>
+                    </ul> -->
                 </form>
+            
             </article>       
         </section>
     <!--</div>-->

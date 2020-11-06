@@ -5,7 +5,7 @@ background-color: red;
 
 input{
     background-color: yellow;
-    border-radius: 15px;
+    /*border-radius: 15px;*/
 }
 
 textarea{
@@ -14,10 +14,37 @@ textarea{
 
 .form{
     background-color: green;
-    list-style: none;
-    line-height: 50px;
+    /*list-style: none;
+    line-height: 50px;*/
 }
 
 .contacto-form{
     background-color: orange;
+}
+header{
+    background-color: blueviolet;
+}
+
+.hola{
+    background-color: brown;
+}
+
+.habilidades{
+    background-color: chocolate;
+}
+
+.cita{
+    background-color: cyan;
+}
+
+.proyectos{
+    background-color: darkorange;
+}
+
+.contacto{
+    background-color: orangered;
+}
+
+footer{
+    background-color: red;
 }
