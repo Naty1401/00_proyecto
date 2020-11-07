@@ -1,0 +1,40 @@
+<section class="contact-me">
+        <article class="container-contactme">
+            <div class="contact-me-2">
+                <h2 class="title-contactme">Contactame</h2>
+                <p class="text-contactme">Te dejo mis redes para que me contactes!</p>
+                <div class="list-contact-me">
+                    <ul class="contact-socialmedia-links">
+                        <li class="contact-item-socialmedia"> 
+                            <a href="#" class="contact-link">
+                                <i class="fab fa-twitter icons-contactme"></i>
+                                @EricaAbril
+                            </a>
+                        </li>
+                        <li class="contact-item-socialmedia"> 
+                            <a href="#" class="contact-link">
+                                <i class="fab fa-github-alt icons-contactme"></i>
+                                EricaNani
+                            </a>
+                        </li>
+                        
+                        <li class="contact-item-socialmedia">
+                             <a href="#" class="contact-link">
+                                <i class="fab fa-linkedin-in icons-contactme"></i>
+                                EricaNani
+                             </a>
+                            </li>
+                        <li class="contact-item-socialmedia"> 
+                            <a href="#" class="contact-link">
+                                <i class="fas fa-envelope icons-contactme "></i>
+                                Erica.abril@hotmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="write-me">
+                <h2 class="title-writeme">Escribime</h2>
+            </div>
+        </article>
+    </section>
