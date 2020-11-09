@@ -72,9 +72,24 @@ h2{
 	position: fixed; /* Hago que la cabecera tenga una posición fija */
 }
 
+#btn-menu{
+    display: none;
+}
 header{
     box-shadow: 0px 8px 10px 4px var(--detalles);
 /*posicion horizontal, posicion vertical, efecto, tamaño*/
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+header label:hover{
+    cursor: pointer;
+    background-color: var(--detalles);
+
 }
 
 
@@ -430,9 +445,30 @@ footer{
 }
     
 @media(max-width: 977px){
-#main-header{
+/*#main-header{
     display: none;
+}*/
+
+header label{
+    display: block;
 }
+.menu{
+    position: absolute;
+    background: var(--fondos);
+    width: 40%;
+    margin-left: -40%;
+}
+.menu ul{
+    flex-direction: column;
+}
+
+.menu li{
+    border-top: 1px solid #fff;
+}
+#btn-menu:checked ~ .menu{
+    margin: 0;
+}
+
 .hola{
     display: flex;
     flex-direction: column;
