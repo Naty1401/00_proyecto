@@ -16,7 +16,7 @@
 body, .ancla{
     /*padding-top: 70px; /* Relleno superior igual a la altura de la cabecera*/
     width: 100%;
-    border: 4px solid red;
+    /*border: 4px solid red;*/
     /*overflow-x: hidden; /*elimino la barra de desplazamiento horizontal*/
 }
 
@@ -448,13 +448,15 @@ footer{
 /*#main-header{
     display: none;
 }*/
-
+#main-header{
+    height: 0;
+}
 header label{
     display: block;
 }
 .menu{
     position: absolute;
-    background: var(--fondos);
+    background: transparent;
     width: 40%;
     margin-left: -40%;
 }
