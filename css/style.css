@@ -16,7 +16,7 @@
 body, .ancla{
     /*padding-top: 70px; /* Relleno superior igual a la altura de la cabecera*/
     width: 100%;
-    /*border: 4px solid red;*/
+    border: 4px solid red;
     /*overflow-x: hidden; /*elimino la barra de desplazamiento horizontal*/
 }
 
@@ -334,33 +334,88 @@ a:hover .oculto{
     /*height: 70vh;*/
     border: 1px solid var(--detalles);
     margin: 10% auto 7% auto;
-    /*padding: 5%;*/
+    /*padding: 2%;*/
     border-radius: 33px;
     background-color: var(--fondos);
     display: flex;
+    /*flex-wrap: wrap;*/
 }
 .contacto-datos{
-    width: 40%;
-    /*height: 600px; importante para q no se rompa*/
-    margin-right: 10%;
+    /*width: 40%;*/
+    /*height: 600px; /*importante para q no se rompa*/
+    /*margin-right: 10%;*/
+    flex-grow: 1;
+    
 }
 
 .contacto-datos p{
     text-align: center;
-    margin-bottom: 20px;
+    margin: 40px;
+    font-size: 25px;
+    width: 80%;
 }
 .contacto-datos a{
     text-decoration: none;
-    line-height: 30px; /*interlineado*/
+    line-height: 50px; /*interlineado*/
     color: red;
+    margin: 15%;
+    font-size: 18px;
+    /*background-color: lawngreen;*/
 }
 
 .contacto-datos a i{
-    color: blueviolet;
+    color: var(--detalles);
+    border: 1px solid var(--fondos);
+    border-radius: 50%;
+    padding: 1%;
 }
 
-.form{
+.contacto-datos a i:hover{
+    /*border: 1px solid var(--detalles);*/
+    border-radius: 50%;
+    padding: 1%;
+    background-color: var(--detalles);
+    color: #fff;
+}
+
+/*.form{
     list-style: none;
+}*/
+
+.contacto-form{
+    /*width: auto;*/
+    height: auto;
+    /*display: flex;
+    flex-direction: column;*/
+    flex-grow: 2;
+}
+form label{
+    display: block;
+    margin: 15px 0px 10px 0px;
+    font-weight: bold;
+}
+.nombre-apellido{
+    display: flex;
+}
+input, textarea{
+    border-radius: 25px;
+    background-color: #fff;
+    border: 1px solid#fff;
+    padding: 10px 15px;
+    width: 90%;
+    /*color: red;
+    border: 0;
+    font-size: 18px;*/
+}
+.contacto-enviar{
+    border-radius: 25px;
+    background-color: var(--detalles);
+    padding: 15px 30px;
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+    align-items: center;
+    margin: 2%;
 }
 /*div{ /*no esta funcionado
     background-color: red;
@@ -417,10 +472,10 @@ footer{
 
 
 
-@media(min-width: 978px) and (max-width:1500px){
-#main-header{
+@media(min-width: 501px) and (max-width:900px){
+/*#main-header{
     display: none;
-}
+}*/
 .contacto{
     margin: 5% 0px;
 }
@@ -444,7 +499,7 @@ footer{
 }*/
 }
     
-@media(max-width: 977px){
+@media(max-width: 500px){
 /*#main-header{
     display: none;
 }*/
@@ -470,6 +525,7 @@ header label{
 #btn-menu:checked ~ .menu{
     margin: 0;
 }
+
 
 .hola{
     display: flex;
@@ -516,6 +572,10 @@ header label{
     display: flex;
     flex-direction: column;
     border: none;
+}
+.nombre-apellido{
+    display: flex;
+    flex-direction: column;
 }
 .footer-links{
     display: none;
