@@ -16,7 +16,7 @@
 body, .ancla{
     /*padding-top: 70px; /* Relleno superior igual a la altura de la cabecera*/
     width: 100%;
-    border: 4px solid red;
+    /*border: 4px solid red;*/
     /*overflow-x: hidden; /*elimino la barra de desplazamiento horizontal*/
 }
 
@@ -49,7 +49,7 @@ h2{
     /*background-color: lawngreen;*/
     }
 .nav li{
-    margin-right: 10px;
+    margin-right: 25px;
 }
 
 .nav a:hover{
@@ -238,7 +238,7 @@ background-color: var(--fondos);
 .cita{
     /*background-color: purple ;*/
     /*font-size: 60px;*/
-    font-size: calc(3em + 1vw);
+    font-size: calc(2em + 1vw);
     text-align: center;
     /*background-image: url(../img/fondocita.jfif);
     background-size: cover;*/
@@ -246,13 +246,22 @@ background-color: var(--fondos);
     padding: 100px;
     font-family: 'Dancing Script', cursive;
 }
+.cita p{
+    color: var(--detalles);
+    font-size: calc(.5em + 1vw);
+    margin-top: 5%;
+}
 
 blockquote::before{
     content: "\201C";
    /* estilo de la cita */ 
     color : var(--detalles);
-    font-size: 250px;
-    font-family: auto;
+    font-size: 350px;
+    font-family: sans-serif;
+    text-align: center;/*no esta funcionando*/
+    background-color: red;
+    /*position: absolute;
+    right: 50%;*/
 }
 
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<********************>////////////>>>>>>>>>>>>>*/
@@ -264,20 +273,21 @@ blockquote::before{
     /*background-color: gold;*/
     /*padding-left: 5%;
     /*flex-direction: column;*/
-    
+    /*display: flex;*/
     /*background-color: turquoise;*/
 }
 .proyectos-grilla{
-    justify-content: center;
+    /*justify-content: center;*/
     /*border: 5px solid blue;*/
     width: 85%;
     height: 75%;
+    margin: 0 auto;
 }
 .proyectos-card{
     border: 1px solid var(--detalles);
     width: 255px;
     height: 250px;
-    float: left;
+    float: left; /*uno al lado del otro*/
     margin: 2%;
     /*padding: 1%;*/
     /*display: flex;*/
@@ -292,9 +302,8 @@ blockquote::before{
     height: 250px;
     justify-content: center;
     align-items: center;
-    
-
 }
+
 .oculto{
     display: none;
     /*color: var(--detalles);*/
@@ -315,11 +324,14 @@ a:hover .oculto{
     justify-content: center;
 }
 
-
 .proyectos-imagen:hover{
     filter: blur(12px);
     /*box-shadow: 0px 0px 10px 4px var(--detalles);*/ 
 }
+.oculto:hover{
+    opacity: 0;
+}
+
 
 
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<********************>////////////>>>>>>>>>>>>>>>*/
@@ -345,19 +357,18 @@ a:hover .oculto{
     /*height: 600px; /*importante para q no se rompa*/
     /*margin-right: 10%;*/
     flex-grow: 1;
-    
 }
 
 .contacto-datos p{
     text-align: center;
     margin: 40px;
     font-size: 25px;
-    width: 80%;
+    /*width: 80%;*/
 }
 .contacto-datos a{
     text-decoration: none;
     line-height: 50px; /*interlineado*/
-    color: red;
+    /*color: red;*/
     margin: 15%;
     font-size: 18px;
     /*background-color: lawngreen;*/
@@ -365,15 +376,15 @@ a:hover .oculto{
 
 .contacto-datos a i{
     color: var(--detalles);
-    border: 1px solid var(--fondos);
+    /*border: 1px solid var(--fondos);*/
     border-radius: 50%;
-    padding: 1%;
+    padding: 1.5%;
 }
 
 .contacto-datos a i:hover{
     /*border: 1px solid var(--detalles);*/
     border-radius: 50%;
-    padding: 1%;
+    padding: 1.5%;/*igual al de arriba para que no se mueva*/
     background-color: var(--detalles);
     color: #fff;
 }
@@ -390,12 +401,13 @@ a:hover .oculto{
     flex-grow: 2;
 }
 form label{
-    display: block;
+    display: block;/*me los baja*/
     margin: 15px 0px 10px 0px;
     font-weight: bold;
 }
 .nombre-apellido{
-    display: flex;
+    display: flex; /*todo en una linea*/
+    /*justify-content: space-between;*/
 }
 input, textarea{
     border-radius: 25px;
@@ -503,6 +515,9 @@ footer{
 /*#main-header{
     display: none;
 }*/
+h2{
+    padding-top: 5px;
+}
 #main-header{
     height: 0;
 }
@@ -572,6 +587,7 @@ header label{
     display: flex;
     flex-direction: column;
     border: none;
+    width: 95%;
 }
 .nombre-apellido{
     display: flex;
