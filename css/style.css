@@ -255,11 +255,15 @@ background-color: var(--fondos);
 blockquote::before{
     content: "\201C";
    /* estilo de la cita */ 
+    /*content: open-quote;*/
+    display: block;
+    line-height: 0;
     color : var(--detalles);
-    font-size: 350px;
+    font-size: 250px;
     font-family: sans-serif;
     text-align: center;/*no esta funcionando*/
     background-color: red;
+    margin-top: 10%;
     /*position: absolute;
     right: 50%;*/
 }
@@ -368,7 +372,7 @@ a:hover .oculto{
 .contacto-datos a{
     text-decoration: none;
     line-height: 50px; /*interlineado*/
-    /*color: red;*/
+    color: var(--detalles);
     margin: 15%;
     font-size: 18px;
     /*background-color: lawngreen;*/
@@ -381,7 +385,7 @@ a:hover .oculto{
     padding: 1.5%;
 }
 
-.contacto-datos a i:hover{
+.contacto-datos a:hover i{
     /*border: 1px solid var(--detalles);*/
     border-radius: 50%;
     padding: 1.5%;/*igual al de arriba para que no se mueva*/
@@ -541,6 +545,11 @@ header label{
     margin: 0;
 }
 
+.nav li:nth-child(4){
+    background-color: transparent;
+    border-radius: none;
+    text-align: left;
+}
 
 .hola{
     display: flex;
