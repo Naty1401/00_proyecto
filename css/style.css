@@ -139,6 +139,7 @@ header label:hover{
     padding: 0.5em 2em;
     /*font-size: 20px;*/
     font-size: calc(.5em + 1vw);
+    outline: none;/*saca el borde al hacer click*/
 }
 .hola-boton:hover{
     /*border: 0.1px solid var(--detalles);*/
@@ -177,29 +178,29 @@ header label:hover{
 .habilidades-texto{
     font-size: 25px;/*no funciona*/
     width: auto;
-    background-color: rebeccapurple;
+    /*background-color: rebeccapurple;*/
 }
 .habilidades-grilla{
     display: flex;
-    /*background-color: royalblue;  */
+    /* background-color: royalblue; */  
     padding: 2%;
     /*max-width: 100%;*/
-    width: 90%;
+    width: auto;
     /* justify-content: center; */
     /* align-items: center; */
 }
 .class-grupo1{
-    width: 780px;
+    width: 520px;
     display: flex;
     flex-direction: row;
-    /*background-color: red;  */
+    /* background-color: red; */
 }
 .class-grupo2{
-    width: 780px;
+    width: 520px;
     /*float: left;*/
     display: flex;
     flex-direction: row;
-    /*background-color: rebeccapurple;  */
+    /* background-color: rebeccapurple; */
 }
 
 .habilidades-texto{
@@ -209,7 +210,7 @@ header label:hover{
 }
 
 .grilla-fig{
-width: 150px;
+width: 100px;
 height: auto;
 border: 2px solid var(--detalles);
 border-radius: 5%;
@@ -284,14 +285,15 @@ blockquote::before{
 .proyectos-grilla{
     /*justify-content: center;*/
     /*border: 5px solid blue;*/
-    width: 85%;
+    width: 81%;
     height: 75%;
     margin: 0 auto;
+    /*background-color: red;*/
 }
 .proyectos-card{
     border: 1px solid var(--detalles);
     width: 255px;
-    height: 250px;
+    height: 245px;
     float: left; /*uno al lado del otro*/
     margin: 2%;
     /*padding: 1%;*/
@@ -301,9 +303,9 @@ blockquote::before{
 .proyectos-imagen{
     /*float: left; */
     /*border: 1px solid var(--detalles);*/
-    margin: 2%;
+    margin: 0;
     /*padding: 1%;*/
-    width: 250px;
+    width: 255px;
     height: 245px;
     justify-content: center;
     align-items: center;
@@ -334,7 +336,7 @@ a:hover .oculto{
     /*box-shadow: 0px 0px 10px 4px var(--detalles);*/ 
 }
 .oculto:hover{
-    opacity: 0;
+    opacity: 0;/*desaparece el texto al pasar el mouse por arriba*/
 }
 
 
@@ -414,12 +416,16 @@ form label{
     display: flex; /*todo en una linea*/
     /*justify-content: space-between;*/
 }
+.nombre-apellido label{
+ display: block;
+}
 input, textarea{
     border-radius: 25px;
     background-color: #fff;
     border: 1px solid#fff;
     padding: 10px 15px;
     width: 90%;
+    resize: none;
     /*color: red;
     border: 0;
     font-size: 18px;*/
@@ -487,128 +493,3 @@ footer{
     box-shadow: 0px 0px 10px 4px var(--fondos); 
 }
 
-
-
-@media(min-width: 501px) and (max-width:900px){
-#main-header{
-    display: none;
-}
-
-.habilidades{
-    height: auto;
-}
-.contacto{
-    margin: 5% auto;
-    width: 90%;
-}
-.habilidades-grilla{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/*.class-grupo1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.class-grupo2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}*/
-}
-    
-@media(max-width: 500px){
-/*#main-header{
-    display: none;
-}*/
-h2{
-    padding-top: 5px;
-}
-#main-header{
-    height: 0;
-}
-header label{
-    display: block;
-}
-.menu{
-    position: absolute;
-    background: transparent;
-    width: 40%;
-    margin-left: -40%;
-}
-.menu ul{
-    flex-direction: column;
-}
-
-.menu li{
-    border-top: 1px solid #fff;
-}
-#btn-menu:checked ~ .menu{
-    margin: 0;
-}
-
-.nav li:nth-child(4){
-    background-color: transparent;
-    border-radius: none;
-    text-align: left;
-}
-
-.hola{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;    
-}
-.hola-presentcion{
-    width: 100%;
-} 
-.habilidades{
-    height: auto;
-}  
-.habilidades-texto{
-    font-size: 20px;
-    width: 90%;
-}
-.habilidades-grilla{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-}
-.class-grupo1{
-    display: flex;
-    flex-direction: column;
-    width: 160px;
-}
-.class-grupo2{
-    display: flex;
-    flex-direction: column;
-    width: 160px;
-}
-.grilla-fig{
-    width: 80px;
-    height: 80px;
-}
-.proyectos{
-    height: auto;
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-.contacto{
-    display: flex;
-    flex-direction: column;
-    border: none;
-    width: 95%;
-}
-.nombre-apellido{
-    display: flex;
-    flex-direction: column;
-}
-.footer-links{
-    display: none;
-}
-}
