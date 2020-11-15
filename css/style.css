@@ -313,7 +313,7 @@ blockquote::before{
 
 .oculto{
     display: none;
-    /*color: var(--detalles);*/
+    color: var(--detalles);
     font-size: 30px;
     text-align: center; 
     font-weight: bold;
@@ -396,9 +396,7 @@ a:hover .oculto{
     color: #fff;
 }
 
-/*.form{
-    list-style: none;
-}*/
+/*.form*/
 
 .contacto-form{
     /*width: auto;*/
@@ -406,19 +404,29 @@ a:hover .oculto{
     /*display: flex;
     flex-direction: column;*/
     flex-grow: 2;
+    text-align: center;
 }
 form label{
     display: block;/*me los baja*/
-    margin: 15px 0px 10px 0px;
+    margin: 15px 0px 10px 5px;
     font-weight: bold;
 }
 .nombre-apellido{
     display: flex; /*todo en una linea*/
-    /*justify-content: space-between;*/
+    /* justify-content: space-between; */
+    /* flex-direction: column; */
+    width: 100%;
+    height: auto;
+
 }
-.nombre-apellido label{
- display: block;
+.nombre-apellido input{
+    height: 15px;
 }
+
+/*.nombre-apellido label{
+    display: flex; 
+    justify-content: space-between;
+} */
 input, textarea{
     border-radius: 25px;
     background-color: #fff;
@@ -429,6 +437,7 @@ input, textarea{
     /*color: red;
     border: 0;
     font-size: 18px;*/
+    outline: 0;
 }
 .contacto-enviar{
     border-radius: 25px;
