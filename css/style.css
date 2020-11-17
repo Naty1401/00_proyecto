@@ -347,7 +347,6 @@ a:hover .oculto{
     /*height: 70vh;*/
     border: 1px solid var(--detalles);
     margin: 10% auto 7% auto;
-    /*padding-left: 1%;*/
     border-radius: 33px;
     background-color: var(--fondos);
     display: flex;
@@ -372,7 +371,6 @@ a:hover .oculto{
     color: var(--detalles);
     margin: 15%;
     font-size: 18px;
-    /*background-color: lawngreen;*/
 }
 
 .contacto-datos a i{
