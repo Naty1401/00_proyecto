@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: inherit;
     }
-
 /*main{
     background-color: red;
 }*/
@@ -12,14 +11,12 @@
 	--fondos: seashell;
 	--oscuro: black;
 }
-
 body, .ancla{
     /*padding-top: 70px; /* Relleno superior igual a la altura de la cabecera*/
     width: 100%;
     /*border: 4px solid red;*/
     /*overflow-x: hidden; /*elimino la barra de desplazamiento horizontal*/
 }
-
 h2{
     /*font-size: 50px;*/
     font-size: calc(2em + 1vw);
@@ -28,6 +25,7 @@ h2{
     padding-top: 80px; /*NO SACAR -> permite usar anclas*/
     font-family: 'Henny Penny', cursive;
 }
+
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<********************>////////////>>>>>>>>>>>>>*/
 /*******************######        <HEADER>        ######*******************/
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<********************>////////////>>>>>>>>>>>>>*/
@@ -40,7 +38,6 @@ h2{
     background-color: var(--fondo);
     font-family: 'Henny Penny', cursive;
 }
-
 .nav a{
     text-decoration: none;
     /*font-size: 30px;*/
@@ -51,18 +48,15 @@ h2{
 .nav li{
     margin-right: 25px;
 }
-
 .nav a:hover{
     /*background-color: violet;*/
     border-bottom: 4px solid var(--detalles);      
 }
-
 .nav li:nth-child(4){
     background-color: var(--fondos);
     border-radius: 1.8rem;
     text-align: center;
 }
-
 #main-header{
     background: #fff;
 	height: 70px;
@@ -72,7 +66,6 @@ h2{
 	position: fixed; /* Hago que la cabecera tenga una posición fija */
     z-index: 1000;/*para que las imagenes queden por debajo*/
 }
-
 #btn-menu{
     display: none;
 }
@@ -80,7 +73,6 @@ header{
     box-shadow: 0px 8px 10px 4px var(--detalles);
 /*posicion horizontal, posicion vertical, efecto, tamaño*/
 }
-
 header label{
     display: none;
     width: 30px;
@@ -92,8 +84,6 @@ header label:hover{
     background-color: var(--detalles);
 
 }
-
-
 
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<********************>////////////>>>>>>>>>>>>>*/
 /*******************###### <SECCION PRESENTACION> ######*******************/
@@ -125,7 +115,6 @@ header label:hover{
     /*font-family: 'Flavors', cursive;*/
     font-family: 'Dancing Script', cursive;
 }
-
 .hola-presentcion p:last-of-type{
     /*font-size: 30px;*/
     font-size: calc(1em + 1vw);
@@ -147,12 +136,10 @@ header label:hover{
     background-color: var(--fondos);
     color: var(--detalles);
 }
-
 .hola-boton:active{
     background-color: var(--detalles);
     color: #fff;
 }
-
 .principal{
     width: 40%;
     min-width: 20%;
@@ -171,10 +158,8 @@ header label:hover{
     text-align: center;
     align-items: center;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
-
 .habilidades-texto{
     font-size: 25px;/*no funciona*/
     width: auto;
@@ -197,13 +182,11 @@ header label:hover{
     display: flex;
     flex-direction: row;
 }
-
 .habilidades-texto{
     font-size: 40px;
     margin: 5%;
     width: 50%;
 }
-
 .grilla-fig{
 width: 100px;
 height: auto;
@@ -213,20 +196,17 @@ margin: 2px auto;
 padding: 30px;
 background-color: var(--fondos);
 }
-
 .grilla-fig:hover{
     /*border: 2px solid var(--fondos);*/
     /*filter: blur(5px); no le gusta a Jonh*/    
     box-shadow: 0px 0px 10px 4px var(--detalles);
 }
-
 .css, .html, .js, .sass, .react, .git{
     /*float: left;*/
     margin: 1%;
     /*position: relative;
     left: 10%;*/
 }
-
 
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<********************>////////////>>>>>>>>>>>>>*/
 /*******************########   <SECCION CITA>   ########*******************/
@@ -248,7 +228,6 @@ background-color: var(--fondos);
     font-size: calc(.5em + 1vw);
     margin-top: 5%;
 }
-
 blockquote::before{
     content: "\201C";
    /* estilo de la cita */ 
@@ -271,11 +250,9 @@ blockquote::before{
 .proyectos{
     width: 100%;
     height: 100vh;
-    /*background-color: gold;*/
     /*padding-left: 5%;
     /*flex-direction: column;*/
     /*display: flex;*/
-    /*background-color: turquoise;*/
 }
 .proyectos-grilla{
     /*justify-content: center;*/
@@ -293,7 +270,6 @@ blockquote::before{
     /*padding: 1%;*/
     /*display: flex;*/
 }
-
 .proyectos-imagen{
     /*float: left; */
     /*border: 1px solid var(--detalles);*/
@@ -304,7 +280,6 @@ blockquote::before{
     justify-content: center;
     align-items: center;
 }
-
 .oculto{
     display: none;
     color: var(--detalles);
@@ -312,7 +287,7 @@ blockquote::before{
     text-align: center; 
     font-weight: bold;
     /*font-family: 'Bungee Shade', cursive;*/
-    font-family: 'Rye', cursive;
+    font-family: 'Rye', cursive;    
 }
 a:hover .oculto{
     display: flex;
@@ -324,7 +299,6 @@ a:hover .oculto{
     align-items: center;
     justify-content: center;
 }
-
 .proyectos-imagen:hover{
     filter: blur(12px);
     /*box-shadow: 0px 0px 10px 4px var(--detalles);*/ 
@@ -332,8 +306,6 @@ a:hover .oculto{
 .oculto:hover{
     opacity: 0;/*desaparece el texto al pasar el mouse por arriba*/
 }
-
-
 
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<********************>////////////>>>>>>>>>>>>>>>*/
 /*******************######   <SECCION CONTACTOS>   ######*******************/
@@ -356,9 +328,8 @@ a:hover .oculto{
     /*width: 40%;*/
     /*height: 600px; /*importante para q no se rompa*/
     /*margin-right: 10%;*/
-    flex-grow: 1;
+    flex-grow: 1; 
 }
-
 .contacto-datos p{
     text-align: center;
     margin: 40px;
@@ -372,14 +343,12 @@ a:hover .oculto{
     margin: 15%;
     font-size: 18px;
 }
-
 .contacto-datos a i{
     color: var(--detalles);
     /*border: 1px solid var(--fondos);*/
     border-radius: 50%;
     padding: 1.5%;
 }
-
 .contacto-datos a:hover i{
     /*border: 1px solid var(--detalles);*/
     border-radius: 50%;
@@ -387,15 +356,13 @@ a:hover .oculto{
     background-color: var(--detalles);
     color: #fff;
 }
-
 /*.form*/
-
 .contacto-form{
-    /*width: auto;*/
+    /*width: 60%;*/
     height: auto;
     /*display: flex;
     flex-direction: column;*/
-    flex-grow: 2;
+    flex-grow: 2; 
     text-align: center;
 }
 form label{
@@ -409,12 +376,10 @@ form label{
     /* flex-direction: column; */
     width: 100%;
     height: auto;
-
 }
 .nombre-apellido input{
     height: 15px;
 }
-
 /*.nombre-apellido label{
     display: flex; 
     justify-content: space-between;
@@ -442,7 +407,6 @@ input, textarea{
     margin: 2%;
     outline: none;
 }
-
 .contacto-enviar:hover{
     background-color: #fff;
     color: var(--detalles);
@@ -454,6 +418,9 @@ input, textarea{
     align-items: center;
     justify-content: center;
 }*/
+.label_name{
+    display: block;
+}
 
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<********************>////////////>>>>>>>>>>>>>*/
 /*******************######        <FOOTER>        ######*******************/
@@ -496,4 +463,5 @@ footer{
     color: var(--fondos);
     box-shadow: 0px 0px 10px 4px var(--fondos);
 }
+
 
