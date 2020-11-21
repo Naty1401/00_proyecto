@@ -7,9 +7,13 @@
 :root{
 	--detalles: orange;
 	--fondos: seashell;
-	--oscuro: black;
+    --oscuro: black;
+    --violeta_oscuro: #350248;
+    --violeta_claro: #7f1ca4;
+    --fucsia: #FF2746;
+    --azul:#2A53FF;
 }
-body, .ancla{
+body{
     background-image: url(../img/fondocita3.jfif);
     background-size: contain;
     
@@ -24,7 +28,7 @@ h2{
     /*margin-bottom: 30px;*/
     text-align: center;
     padding-top: 80px; /*NO SACAR -> permite usar anclas*/
-    font-family: 'Henny Penny', cursive;
+    font-family: 'Bungee Shade', cursive;;
     color: #3f0889;
 }
 
@@ -49,9 +53,9 @@ h2{
     /*background-color: lawngreen;*/
     /*background-image: url(../img/fondocita4.jfif);
     background-size: cover;*/
-    background-color:#350248;
+    background-color:var(--fucsia);
     border-radius: 15px;
-    padding: 10px;
+    padding: 5px;
     }
 .nav li{
     margin-right: 25px;
@@ -132,7 +136,7 @@ header label:hover{
 }
 .hola-boton{
     color: #fff;
-    border: 1px solid var(--detalles);
+    border: 1px solid var(--fucsia);
     background-color: #FF2746;
     border-radius: 40px;
     margin: 2.5em;
@@ -144,7 +148,7 @@ header label:hover{
 .hola-boton:hover{
     /*border: 0.1px solid var(--detalles);*/
     background-color: var(--fondos);
-    color: var(--detalles);
+    color: var(--fucsia);
 }
 .hola-boton:active{
     background-color: var(--detalles);
@@ -234,13 +238,13 @@ background-color: var(--fondos);
     background-color: var(--fondos);
     font-size: calc(4em + 1vw);
     text-align: center;
-    color: #2A53FF;
+    color: var(--fucsia);
     opacity: 80%;
-    padding: 60px;
+    padding: 90px;
     font-family: 'Dancing Script', cursive;
 }
 .cita p{
-    color: var(--detalles);
+    color: var(--violeta_claro);
     font-size: calc(.5em + 1vw);
     margin-top: 5%;
 }
@@ -250,12 +254,12 @@ blockquote::before{
     /*content: open-quote;*/
     display: block;
     line-height: 0;
-    color : var(--detalles);
+    color : var(--violeta_claro);
     font-size: 250px;
     font-family: sans-serif;
-    text-align: center;/*no esta funcionando*/
-    background-color: red;
-    margin-top: 10%;
+    /*text-align: center;/*no esta funcionando*/
+    /*background-color: red;*/
+    margin-top: 5%;
     /*position: absolute;
     right: 50%;*/
 }
@@ -340,7 +344,7 @@ a:hover .oculto{
     margin: 10% auto 7% auto;
     border-radius: 33px;
     /*background-color:#28FEF3;*/
-    background-color: #0F0078;
+    background-color: #F7CDE1;
     display: flex;
     /*flex-wrap: wrap;*/
 }
@@ -348,7 +352,7 @@ a:hover .oculto{
     /*width: 40%;*/
     /*height: 600px; /*importante para q no se rompa*/
     /*margin-right: 10%;*/
-    flex-grow: 1; 
+    flex-grow: 0; 
 }
 .contacto-datos p{
     text-align: center;
@@ -359,12 +363,12 @@ a:hover .oculto{
 .contacto-datos a{
     text-decoration: none;
     line-height: 50px; /*interlineado*/
-    color: var(--detalles);
+    color: var(--fucsia);
     margin: 15%;
-    font-size: 18px;
+    font-size: 28px;
 }
 .contacto-datos a i{
-    color: var(--detalles);
+    color: var(--fucsia);
     /*border: 1px solid var(--fondos);*/
     border-radius: 50%;
     padding: 1.5%;
@@ -373,7 +377,7 @@ a:hover .oculto{
     /*border: 1px solid var(--detalles);*/
     border-radius: 50%;
     padding: 1.5%;/*igual al de arriba para que no se mueva*/
-    background-color: var(--detalles);
+    background-color: var(--fucsia);
     color: #fff;
 }
 /*.form*/
@@ -382,7 +386,7 @@ a:hover .oculto{
     height: auto;
     /*display: flex;
     flex-direction: column;*/
-    flex-grow: 2; 
+    flex-grow: 1; 
     text-align: center;
 }
 form label{
@@ -394,7 +398,7 @@ form label{
     display: flex; /*todo en una linea*/
     /* justify-content: space-between; */
     /* flex-direction: column; */
-    width: 100%;
+    width: 97%;
     height: auto;
 }
 .nombre-apellido input{
@@ -406,7 +410,7 @@ form label{
 } */
 input, textarea{
     border-radius: 25px;
-    background-color:#28FEF3;
+    background-color: floralwhite;
     border: 1px solid#fff;
     padding: 10px 15px;
     width: 90%;
@@ -418,10 +422,10 @@ input, textarea{
 }
 .contacto-enviar{
     border-radius: 25px;
-    background-color: var(--detalles);
+    background-color: var(--fucsia);
     padding: 15px 30px;
     color: #fff;
-    border: 1px solid var(--detalles);
+    border: 1px solid var(--fucsia);
     font-size: 18px;
     align-items: center;
     margin: 2%;
@@ -429,7 +433,7 @@ input, textarea{
 }
 .contacto-enviar:hover{
     background-color: #fff;
-    color: var(--detalles);
+    color: var(--fucsia);
 }
 /*div{ /*no esta funcionado
     background-color: red;
@@ -447,7 +451,7 @@ input, textarea{
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<********************>////////////>>>>>>>>>>>>>*/
 footer{
     /*background-color: var(--detalles);*/
-    background-color: #EC75DB;
+    background-color:var(--violeta_oscuro);
     text-align: center;
     padding: 30px;
     /* width: 100; */

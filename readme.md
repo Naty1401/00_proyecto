@@ -40,7 +40,7 @@
 
 ***
 
-### Este fue un proyecto que lo vi nacer y ahora me llena de orgullo lo que fui logrando día a día durante la cursada. Debo agradecer muy especialmente a [Jonh Parra](https://github.com/Jonhks) que desde su lugar como docente me acompaño en todo este proceso y me enseño mucho más que códigos. A [Laydy]() que siempre esta con la mejor disposición para trasmitir sus conocimentos y al apoyo constante de mis compañeras de la 6ta generación Frontend online de Ada.
+### Este fue un proyecto que lo vi nacer y ahora me llena de orgullo lo que fui logrando día a día durante la cursada. Debo agradecer muy especialmente a [Jonh Parra](https://github.com/Jonhks) que desde su lugar como docente me acompaño en todo este proceso y me enseño mucho más que códigos. A [Laydy](https://github.com/leydyk93) que siempre esta con la mejor disposición para trasmitir sus conocimentos y por útlimo pero no menos importante al apoyo constante de mis compañeras de la 6ta generación Frontend online de Ada.
 
 <br>
 <br>
