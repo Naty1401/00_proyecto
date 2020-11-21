@@ -10,7 +10,7 @@
 	--oscuro: black;
 }
 body, .ancla{
-    background-image: url(../img/fondocita4.jfif);
+    background-image: url(../img/fondocita3.jfif);
     background-size: contain;
     
     /*padding-top: 70px; /* Relleno superior igual a la altura de la cabecera*/
@@ -37,7 +37,7 @@ h2{
     /*float: right; /*a la derecha*/
     /*margin: 20px; */
     justify-content: flex-end; /*sustituye el float right*/
-    /* background-color: var(--fondo); */
+    /*background-color: var(--fondo); */
     margin: 1%;
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -67,7 +67,6 @@ h2{
 }
 #main-header{
     background-image: url(../img/fondocita3.jfif);
-    /*background: #fff;*/
 	height: 70px;
 	width: 100%; /* hago que la cabecera ocupe el ancho completo de la página */
 	left: 0; /* Posiciono la cabecera al lado izquierdo */
@@ -105,7 +104,7 @@ header label:hover{
     width: 100%;
     display: flex;
     align-items: center;
-    opacity: 90%;
+    opacity: 90%; 
 }
 .hola-presentcion{
     /*margin-top: 15%;*/
@@ -183,18 +182,20 @@ header label:hover{
     width: auto;
     /* justify-content: center; */
     /* align-items: center; */
+    background-image: url(../img/fondocita3.jfif);
+
 }
 .class-grupo1{
     width: 520px;
     display: flex;
     flex-direction: row;
-    background-image: url(../img/fondocita3.jfif);
+    /*background-image: url(../img/fondocita3.jfif);*/
 }
 .class-grupo2{
     width: 520px;
     display: flex;
     flex-direction: row;
-    background-image: url(../img/fondocita3.jfif);
+    /*background-image: url(../img/fondocita3.jfif);*/
 
 }
 .habilidades-texto{
@@ -235,7 +236,7 @@ background-color: var(--fondos);
     text-align: center;
     color: #2A53FF;
     opacity: 80%;
-    padding: 100px;
+    padding: 60px;
     font-family: 'Dancing Script', cursive;
 }
 .cita p{
@@ -264,7 +265,8 @@ blockquote::before{
 /*<<<<<<<<<<<<<<<\\\\\\\\\\<********************>////////////>>>>>>>>>>>>>*/
 .proyectos{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
+    /*height: 80rem;*/
     /*padding-left: 5%;
     /*flex-direction: column;*/
     /*display: flex;*/
@@ -274,7 +276,8 @@ blockquote::before{
     /*justify-content: center;*/
     /*border: 5px solid blue;*/
     width: 81%;
-    height: 75%;
+    /*height: 75%;*/
+    height: auto;
     margin: 0 auto;
 }
 .proyectos-card{
@@ -331,12 +334,13 @@ a:hover .oculto{
 }no esta haciendo nada*/
 
 .contacto{
-    width: 70%;
-    /*height: 70vh;*/
+    width: 85%;
+    /*height: 50px;*/
     border: 1px solid var(--detalles);
     margin: 10% auto 7% auto;
     border-radius: 33px;
-    background-color:khaki;
+    /*background-color:#28FEF3;*/
+    background-color: #0F0078;
     display: flex;
     /*flex-wrap: wrap;*/
 }
@@ -402,7 +406,7 @@ form label{
 } */
 input, textarea{
     border-radius: 25px;
-    background-color: #fff;
+    background-color:#28FEF3;
     border: 1px solid#fff;
     padding: 10px 15px;
     width: 90%;

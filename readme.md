@@ -7,7 +7,7 @@
 
 ***
 
-### Si quueres ver el resultado final poedés darle click a este [enlace](https://github.com/Naty1401/00_proyecto) o desde este [otro]()
+### Si quueres ver el resultado final podés darle click a este [enlace](https://github.com/Naty1401/00_proyecto) o desde este [otro](https://practical-heyrovsky-9ba98e.netlify.app/)
 
 <br>
 
@@ -26,13 +26,13 @@
 
 - Entrar a la carpeta del proyecto y abrirlo en tu IDE
 
-### Este proyecto no necesita la instlación de ninguna dependencia por ahora.
+### Este proyecto no necesita la instalación de ninguna dependencia por ahora.
 
 <br>
 
 ***
 
-### Aqui te dejo una captura de la pagina finalizada, como deberias verla en el navegador desde una computadora
+### Aqui te dejo una captura de la página finalizada, como deberias verla en el navegador desde una computadora
 
 ![imagen](./img/screencapture.png)
 
@@ -40,7 +40,7 @@
 
 ***
 
-### Este fue un proyecto que lo vi nacer y ahora me llena de orgullo lo que fui logrando dia a dia durante la cursada. Debo agradecer a [Jonh Parra]() que me enseño mucho mas que codigos. A [Laydy]() que siempre esta con la mejor disposición para trasmitir sus conocimentos y al apoyo constante de mis compañeras de la 6ta generación Frontend online de Ada.
+### Este fue un proyecto que lo vi nacer y ahora me llena de orgullo lo que fui logrando día a día durante la cursada. Debo agradecer muy especialmente a [Jonh Parra](https://github.com/Jonhks) que desde su lugar como docente me acompaño en todo este proceso y me enseño mucho más que códigos. A [Laydy]() que siempre esta con la mejor disposición para trasmitir sus conocimentos y al apoyo constante de mis compañeras de la 6ta generación Frontend online de Ada.
 
 <br>
 <br>
