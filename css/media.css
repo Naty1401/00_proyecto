@@ -18,7 +18,9 @@
     width: 90%;
 }
 .proyectos{
+    display: flex;
     height: auto;
+
 }
 .contacto{
     margin: 5% auto;
@@ -63,6 +65,7 @@
 }*/
 h2{
     padding-top: 5px;
+    margin: 2%;
 }
 #main-header{
     height: 0;
