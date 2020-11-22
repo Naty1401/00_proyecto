@@ -12,6 +12,10 @@
     --violeta_claro: #7f1ca4;
     --fucsia: #FF2746;
     --azul:#2A53FF;
+    --color:#d9fede;
+    --verde: #40e50e;
+    --amarillo: #D9FE0E;
+
 }
 body{
     background-image: url(../img/fondocita3.jfif);
@@ -167,7 +171,7 @@ header label:hover{
 .habilidades{
     width: 100%;
     /*height: 120vh;*/
-    height: 100vh;
+    height: 110vh;
     background-color:var(--fondos);
     text-align: center;
     align-items: center;
@@ -242,6 +246,7 @@ background-color: var(--fondos);
     opacity: 80%;
     padding: 90px;
     font-family: 'Dancing Script', cursive;
+    
 }
 .cita p{
     color: var(--violeta_claro);
@@ -305,7 +310,7 @@ blockquote::before{
 }
 .oculto{
     display: none;
-    color: var(--detalles);
+    color: var(--violeta_claro);
     font-size: 30px;
     text-align: center; 
     font-weight: bold;
