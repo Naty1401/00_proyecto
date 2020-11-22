@@ -241,7 +241,7 @@ background-color: var(--fondos);
     text-align: center;
     color: var(--fucsia);
     opacity: 80%;
-    padding: 110px;
+    padding-top: 110px;
     font-family: 'Dancing Script', cursive;    
 }
 .cita p{
